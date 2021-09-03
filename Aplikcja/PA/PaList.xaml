@@ -1,0 +1,235 @@
+﻿    <Page x:Class="Aplikcja.PA.PaList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:Aplikcja.PA"
+    Title="PaList" MinHeight="650" Height="Auto" MinWidth="600" Width="Auto" Background="#2F4858">
+    <Page.Resources>
+        <ResourceDictionary Source="C:\Users\Rafał\Desktop\studia - WSB-NLU\Interfejs użytkownika\Aplikcja\Aplikcja\Dictionary1.xaml"/>
+    </Page.Resources>
+    <Grid Background="#54433A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="0.65*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="0.6*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Style="{StaticResource BorderMainWindow}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateMini}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateMini}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateMini}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateMini}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateMini}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSmall}"/>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSuperSmall}"/>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSuperSmall}"/>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSuperSmall}"/>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSuperSmall}"/>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSuperSmall}"/>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSuperSmall}"/>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSuperSmall}"/>
+                    <ColumnDefinition Width="0.8*"/>
+                </Grid.ColumnDefinitions>
+                <!--Wiersz0-->
+                <Label Grid.Row="0" Grid.Column="0" Content="Customer Item" Style="{StaticResource LabelStandard}"/>
+                <CheckBox Grid.Row="0" Grid.Column="2" Content="Released" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="0" Grid.Column="4" Content="Protytpe Relesed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="0" Grid.Column="6" Content="Reviewed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="0" Grid.Column="8" Content="Under Review" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="0" Grid.Column="10" Content="In work" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="0" Grid.Column="12" Content="Created" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="0" Grid.Column="14" Content="Stoped" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="0" Grid.Column="16" Content="Obsolete" Style="{StaticResource CheckboxStandard}"/>
+
+                <!--Wiersz1-->
+                <Border Grid.Row="1" Grid.ColumnSpan="17" Style="{StaticResource BorderMiniSepartor}"/>
+
+                <!--Wiersz2-->
+                <Label Grid.Row="2" Grid.Column="0" Content="Data Procesing" Style="{StaticResource LabelStandard}"/>
+                <CheckBox Grid.Row="2" Grid.Column="2" Content="Released" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="2" Grid.Column="4" Content="Protytpe Relesed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="2" Grid.Column="6" Content="Reviewed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="2" Grid.Column="8" Content="Under Review" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="2" Grid.Column="10" Content="In work" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="2" Grid.Column="12" Content="Created" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="2" Grid.Column="14" Content="Stoped" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="2" Grid.Column="16" Content="Obsolete" Style="{StaticResource CheckboxStandard}"/>
+
+                <!--Wiersz3-->
+                <Border Grid.Row="3" Grid.ColumnSpan="17" Style="{StaticResource BorderMiniSepartor}"/>
+
+                <!--Wiersz4-->
+                <Label Grid.Row="4" Grid.Column="0" Content="Electrical Procesing" Style="{StaticResource LabelStandard}"/>
+                <CheckBox Grid.Row="4" Grid.Column="2" Content="Released" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="4" Grid.Column="4" Content="Protytpe Relesed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="4" Grid.Column="6" Content="Reviewed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="4" Grid.Column="8" Content="Under Review" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="4" Grid.Column="10" Content="In work" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="4" Grid.Column="12" Content="Created" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="4" Grid.Column="14" Content="Stoped" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="4" Grid.Column="16" Content="Obsolete" Style="{StaticResource CheckboxStandard}"/>
+
+                <!--Wiersz5-->
+                <Border Grid.Row="5" Grid.ColumnSpan="17" Style="{StaticResource BorderMiniSepartor}"/>
+
+                <!--Wiersz6-->
+                <Label Grid.Row="6" Grid.Column="0" Content="Graphic" Style="{StaticResource LabelStandard}"/>
+                <CheckBox Grid.Row="6" Grid.Column="2" Content="Released" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="6" Grid.Column="4" Content="Protytpe Relesed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="6" Grid.Column="6" Content="Reviewed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="6" Grid.Column="8" Content="Under Review" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="6" Grid.Column="10" Content="In work" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="6" Grid.Column="12" Content="Created" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="6" Grid.Column="14" Content="Stoped" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="6" Grid.Column="16" Content="Obsolete" Style="{StaticResource CheckboxStandard}"/>
+
+                <!--Wiersz7-->
+                <Border Grid.Row="7" Grid.ColumnSpan="17" Style="{StaticResource BorderMiniSepartor}"/>
+
+                <!--Wiersz8-->
+                <Label Grid.Row="8" Grid.Column="0" Content="Labeling" Style="{StaticResource LabelStandard}"/>
+                <CheckBox Grid.Row="8" Grid.Column="2" Content="Released" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="8" Grid.Column="4" Content="Protytpe Relesed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="8" Grid.Column="6" Content="Reviewed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="8" Grid.Column="8" Content="Under Review" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="8" Grid.Column="10" Content="In work" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="8" Grid.Column="12" Content="Created" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="8" Grid.Column="14" Content="Stoped" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="8" Grid.Column="16" Content="Obsolete" Style="{StaticResource CheckboxStandard}"/>
+
+                <!--Wiersz9-->
+                <Border Grid.Row="9" Grid.ColumnSpan="17" Style="{StaticResource BorderMiniSepartor}"/>
+
+                <!--Wiersz10-->
+                <Label Grid.Row="10" Grid.Column="0" Content="Security Waiver" Style="{StaticResource LabelStandard}"/>
+                <CheckBox Grid.Row="10" Grid.Column="2" Content="Released" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="10" Grid.Column="4" Content="Protytpe Relesed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="10" Grid.Column="6" Content="Reviewed" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="10" Grid.Column="8" Content="Under Review" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="10" Grid.Column="10" Content="In work" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="10" Grid.Column="12" Content="Created" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="10" Grid.Column="14" Content="Stoped" Style="{StaticResource CheckboxStandard}"/>
+                <CheckBox Grid.Row="10" Grid.Column="16" Content="Obsolete" Style="{StaticResource CheckboxStandard}"/>
+            </Grid>
+        </Border>
+        <Border Grid.Row="1" Style="{StaticResource BorderMainSepartor}"/>
+        <Border Grid.Row="2" Style="{StaticResource BorderMainWindow}">
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                    <RowDefinition Style="{StaticResource RowSeparateStandard}"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="1.7*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="1.7*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+
+                <CheckBox Grid.Row="0" Grid.Column="0" Content="Created:" Style="{StaticResource CheckboxStandard}"/>
+                <Label Grid.Row="0" Grid.Column="1" Content="From:" Style="{StaticResource LabelToTheRight}"/>
+                <DatePicker Grid.Row="0" Grid.Column="2" Style="{StaticResource DatePickerStandard}"/>
+                <Label Grid.Row="0" Grid.Column="3" Content="To:" Style="{StaticResource LabelToTheRight}"/>
+                <DatePicker Grid.Row="0" Grid.Column="4" Style="{StaticResource DatePickerStandard}"/>
+                <CheckBox Grid.Row="0" Grid.Column="6" Content="Created by" Style="{StaticResource CheckboxStandard}"/>
+                <ComboBox Grid.Row="0" Grid.Column="7" Style="{StaticResource ComboBoxStandardNoMargin}">
+                    <ComboBoxItem>TC</ComboBoxItem>
+                    <ComboBoxItem>Developer</ComboBoxItem>
+                    <ComboBoxItem>Tools and modules debug</ComboBoxItem>
+                    <ComboBoxItem>AIO</ComboBoxItem>
+                </ComboBox>
+
+                <CheckBox Grid.Row="1" Grid.Column="0" Content="Modified:" Style="{StaticResource CheckboxStandard}"/>
+                <Label Grid.Row="1" Grid.Column="1" Content="From:" Style="{StaticResource LabelToTheRight}"/>
+                <DatePicker Grid.Row="1" Grid.Column="2" Style="{StaticResource DatePickerStandard}"/>
+                <Label Grid.Row="1" Grid.Column="3" Content="To:" Style="{StaticResource LabelToTheRight}"/>
+                <DatePicker Grid.Row="1" Grid.Column="4" Style="{StaticResource DatePickerStandard}"/>
+                <CheckBox Grid.Row="1" Grid.Column="6" Content="Modified by" Style="{StaticResource CheckboxStandard}"/>
+                <ComboBox Grid.Row="1" Grid.Column="7" Style="{StaticResource ComboBoxStandardNoMargin}">
+                    <ComboBoxItem>TC</ComboBoxItem>
+                    <ComboBoxItem>Developer</ComboBoxItem>
+                    <ComboBoxItem>Tools and modules debug</ComboBoxItem>
+                    <ComboBoxItem>AIO</ComboBoxItem>
+                </ComboBox>
+
+                <CheckBox Grid.Row="2" Grid.Column="0" Content="Technology" Style="{StaticResource CheckboxStandard}"/>
+                <ComboBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource ComboBoxStandardNoMargin}">
+                    <ComboBoxItem>GSM SIM</ComboBoxItem>
+                    <ComboBoxItem>EUICC SIM</ComboBoxItem>
+                    <ComboBoxItem>E-SIM</ComboBoxItem>
+                    <ComboBoxItem>Outsourcing</ComboBoxItem>
+                    <ComboBoxItem>M2M</ComboBoxItem>
+                    <ComboBoxItem>Other</ComboBoxItem>
+                </ComboBox>
+
+                <CheckBox Grid.Row="3" Grid.Column="0" Content="Step" Style="{StaticResource CheckboxStandard}"/>
+                <ComboBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource ComboBoxStandardNoMargin}">
+                    <ComboBoxItem>Step1</ComboBoxItem>
+                    <ComboBoxItem>Step2</ComboBoxItem>
+                    <ComboBoxItem>Step1 and Step2</ComboBoxItem>
+                </ComboBox>
+
+                <Button Content="Apply Filters" Grid.Column="5" Grid.ColumnSpan="3" Grid.Row="4" Grid.RowSpan="2" Style="{StaticResource ButtonOrangeBorder}"/>
+
+                <CheckBox Grid.Row="4" Grid.Column="0" Content="Name" Style="{StaticResource CheckboxStandard}"/>
+                <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource TextboxNoMargin}"/>
+
+                <CheckBox Grid.Row="5" Grid.Column="0" Content="Module" Style="{StaticResource CheckboxStandard}"/>
+                <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource TextboxNoMargin}"/>
+            </Grid>
+        </Border>
+        <Border Grid.Row="3" Style="{StaticResource BorderMainSepartor}"/>
+        <Border Grid.Row="4" Style="{StaticResource BorderMainWindow}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="Perso Aplication list"/>
+                <DataGrid Grid.Row="1" Style="{StaticResource DataGridMain}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Nr"/>
+                        <DataGridTextColumn Header="CI" Width="*"/>
+                        <DataGridTextColumn Header="PA" Width="*"/>
+                        <DataGridTextColumn Header="Technical Product" Width="*"/>
+                        <DataGridTextColumn Header="DP" Width="80"/>
+                        <DataGridTextColumn Header="EP" Width="80"/>
+                        <DataGridTextColumn Header="Graphic" Width="80"/>
+                        <DataGridTextColumn Header="Label" Width="80"/>
+                        <DataGridTextColumn Header="Waiver" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
+    

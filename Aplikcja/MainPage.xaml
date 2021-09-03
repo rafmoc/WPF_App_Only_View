@@ -1,0 +1,121 @@
+﻿<Page x:Class="Aplikcja.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:Aplikcja"
+    Title="MainPage" MinHeight="600" Height="Auto" MinWidth="600" Width="Auto" Background="#2F4858">
+    <Page.Resources>
+        <ResourceDictionary Source="Dictionary1.xaml"/>
+    </Page.Resources>
+    <Grid Background="#54433A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Style="{StaticResource BorderMainWindow}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSmall}"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSmall}"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--Wiersz0-->
+                <Button Grid.Row="0" Grid.Column="0" Content="DPD" Style="{StaticResource ButtonMainWindow}"/>
+                <ComboBox Grid.Row="0" Grid.Column="2" Style="{StaticResource ComboBoxStandard}">
+                    <ComboBoxItem>TC</ComboBoxItem>
+                    <ComboBoxItem>Developer</ComboBoxItem>
+                    <ComboBoxItem>Tools and modules debug</ComboBoxItem>
+                    <ComboBoxItem>AIO</ComboBoxItem>
+                </ComboBox>
+                <TextBox Grid.Row="0" Grid.Column="4" Style="{StaticResource TextboxStandard}"/>
+                <!--Wiersz1-->
+                <Button Grid.Row="1" Grid.Column="0" Content="GSMEPD" Style="{StaticResource ButtonMainWindow}"/>
+                <ComboBox Grid.Row="1" Grid.Column="2" Style="{StaticResource ComboBoxStandard}">
+                    <ComboBoxItem>TC</ComboBoxItem>
+                    <ComboBoxItem>Developer</ComboBoxItem>
+                    <ComboBoxItem>Tools and modules debug</ComboBoxItem>
+                    <ComboBoxItem>AIO</ComboBoxItem>
+                </ComboBox>
+                <TextBox Grid.Row="1" Grid.Column="4" Style="{StaticResource TextboxStandard}"/>
+                <!--Wiersz2-->
+                <Button Grid.Row="2" Grid.Column="0" Content="ESIMEPD" Style="{StaticResource ButtonMainWindow}"/>
+                <ComboBox Grid.Row="2" Grid.Column="2" Style="{StaticResource ComboBoxStandard}">
+                    <ComboBoxItem>TC</ComboBoxItem>
+                    <ComboBoxItem>Developer</ComboBoxItem>
+                    <ComboBoxItem>Tools and modules debug</ComboBoxItem>
+                    <ComboBoxItem>AIO</ComboBoxItem>
+                </ComboBox>
+                <TextBox Grid.Row="2" Grid.Column="4" Style="{StaticResource TextboxStandard}"/>
+                <!--Wiersz3-->
+                <Button Grid.Row="3" Grid.Column="0" Content="CID" Style="{StaticResource ButtonMainWindow}"/>
+                <ComboBox Grid.Row="3" Grid.Column="2" Style="{StaticResource ComboBoxStandard}">
+                    <ComboBoxItem>TC</ComboBoxItem>
+                    <ComboBoxItem>Developer</ComboBoxItem>
+                    <ComboBoxItem>Tools and modules debug</ComboBoxItem>
+                    <ComboBoxItem>AIO</ComboBoxItem>
+                </ComboBox>
+                <TextBox Grid.Row="3" Grid.Column="4" Style="{StaticResource TextboxStandard}"/>
+            </Grid>
+        </Border>
+        <Border Grid.Row="1" Style="{StaticResource BorderMainSepartor}"/>
+        <Border Grid.Row="2" Style="{StaticResource BorderMainWindow}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="Newest Redmine Updates:"/>
+                <DataGrid Grid.Row="1" Style="{StaticResource DataGridMain}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Nr"/>
+                        <DataGridTextColumn Header="Link" Width="*"/>
+                        <DataGridTextColumn Header="Topic" Width="*"/>
+                        <DataGridTextColumn Header="Created" Width="100"/>
+                        <DataGridTextColumn Header="Last update" Width="100"/>
+                        <DataGridTextColumn Header="Creator" Width="*"/>
+                        <DataGridTextColumn Header="Updated by" Width="*"/>
+                        <DataGridTextColumn Header="To" Width="*"/>
+                        <DataGridTextColumn Header="Watchers" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+        <Border Grid.Row="3" Style="{StaticResource BorderMainSepartor}"/>
+        <Border Grid.Row="4" Style="{StaticResource BorderMainWindow}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="Newest Confluence Updates:"/>
+                <DataGrid Grid.Row="1" Style="{StaticResource DataGridMain}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Nr"/>
+                        <DataGridTextColumn Header="Link" Width="*"/>
+                        <DataGridTextColumn Header="Topic" Width="*"/>
+                        <DataGridTextColumn Header="Created" Width="100"/>
+                        <DataGridTextColumn Header="Last update" Width="100"/>
+                        <DataGridTextColumn Header="Creator" Width="*"/>
+                        <DataGridTextColumn Header="Updated by" Width="*"/>
+                        <DataGridTextColumn Header="To" Width="*"/>
+                        <DataGridTextColumn Header="Watchers" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
+

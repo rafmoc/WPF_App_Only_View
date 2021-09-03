@@ -1,0 +1,142 @@
+﻿<Page x:Class="Aplikcja.Configuration.CInew"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:Aplikcja.Configuration"
+    Title="CInew" MinHeight="650" Height="Auto" MinWidth="600" Width="Auto" Background="#2F4858">
+    <Page.Resources>
+        <ResourceDictionary Source="C:\Users\Rafał\Desktop\studia - WSB-NLU\Interfejs użytkownika\Aplikcja\Aplikcja\Dictionary1.xaml"/>
+    </Page.Resources>
+    <Grid Background="#54433A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource BorderMainWindow}">
+            <Label Content="New Customer Item Creation" Style="{StaticResource LabelMid}"/>
+        </Border>
+        <Border Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource BorderMainSepartor}"/>
+        <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource BorderMainWindow}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Style="{StaticResource RowSeparateMini}"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Style="{StaticResource RowSeparateMini}"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Style="{StaticResource RowSeparateMini}"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Style="{StaticResource RowSeparateMini}"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSmall}"/>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnSeparateSmall}"/>
+                    <ColumnDefinition Width="0.7*"/>
+                </Grid.ColumnDefinitions>
+                <!--Wiersz0-->
+                <Label Grid.Row="0" Grid.Column="0" Content="Customer Item Name" Style="{StaticResource LabelStandard}"/>
+                <TextBox Grid.Row="0" Grid.Column="2" Style="{StaticResource TextboxBig}"/>
+                <Label Grid.Row="0" Grid.Column="4" Content="Data Procesing Number" Style="{StaticResource LabelStandard}"/>
+                <TextBox Grid.Row="0" Grid.Column="6" Style="{StaticResource TextboxBig}"/>
+
+                <!--Wiersz1-->
+                <Border Grid.Row="1" Grid.ColumnSpan="17" Style="{StaticResource BorderMiniSepartor}"/>
+
+                <!--Wiersz2-->
+                <Label Grid.Row="2" Grid.Column="0" Content="Customer Item Number" Style="{StaticResource LabelStandard}"/>
+                <TextBox Grid.Row="2" Grid.Column="2" Style="{StaticResource TextboxBig}"/>
+                <Label Grid.Row="2" Grid.Column="4" Content="Electrical Procesing Number" Style="{StaticResource LabelStandard}"/>
+                <TextBox Grid.Row="2" Grid.Column="6" Style="{StaticResource TextboxBig}"/>
+
+                <!--Wiersz3-->
+                <Border Grid.Row="3" Grid.ColumnSpan="17" Style="{StaticResource BorderMiniSepartor}"/>
+
+                <!--Wiersz4-->
+                <Label Grid.Row="4" Grid.Column="0" Content="Graphic" Style="{StaticResource LabelStandard}"/>
+                <TextBox Grid.Row="4" Grid.Column="2" Style="{StaticResource TextboxBig}"/>
+                <Label Grid.Row="4" Grid.Column="4" Content="Labeling" Style="{StaticResource LabelStandard}"/>
+                <TextBox Grid.Row="4" Grid.Column="6" Style="{StaticResource TextboxBig}"/>
+
+                <!--Wiersz5-->
+                <Border Grid.Row="5" Grid.ColumnSpan="17" Style="{StaticResource BorderMiniSepartor}"/>
+
+                <!--Wiersz6-->
+                <Label Grid.Row="6" Grid.Column="0" Content="Security Waiver" Style="{StaticResource LabelStandard}"/>
+                <TextBox Grid.Row="6" Grid.Column="2" Style="{StaticResource TextboxBig}"/>
+                <Label Grid.Row="6" Grid.Column="4" Content="Card Production Waiver" Style="{StaticResource LabelStandard}"/>
+                <TextBox Grid.Row="6" Grid.Column="6" Style="{StaticResource TextboxBig}"/>
+
+                <!--Wiersz7-->
+                <Border Grid.Row="7" Grid.ColumnSpan="17" Style="{StaticResource BorderMiniSepartor}"/>
+
+                <!--Wiersz8-->
+                <Label Grid.Row="8" Grid.Column="0" Content="Additional Modules" Style="{StaticResource LabelStandard}"/>
+                <TextBox Grid.Row="8" Grid.Column="2" Style="{StaticResource TextboxBig}"/>
+                <Label Grid.Row="8" Grid.Column="4" Content="Additional Files" Style="{StaticResource LabelStandard}"/>
+                <TextBox Grid.Row="8" Grid.Column="6" Style="{StaticResource TextboxBig}"/>
+
+                <!--Sparete-->
+                <Border Grid.RowSpan="9" Grid.Column="3"  Style="{StaticResource BorderMiniSepartorVertical}"/>
+            </Grid>
+        </Border>
+        <Border Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource BorderMainSepartor}"/>
+        <Border Grid.Row="4" Grid.ColumnSpan="2" Background="#DFE0DF" Margin="6,1,1,1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="140"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.ColumnSpan="2" Content="Similar and matching CI's" Style="{StaticResource LabelMid}"/>
+                <Button Content="Search" Grid.Row="0" Grid.Column="1" Style="{StaticResource ButtonOrangeBorderSmall}"/>
+                <DataGrid Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource DataGridMain}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Nr"/>
+                        <DataGridTextColumn Header="CI" Width="*"/>
+                        <DataGridTextColumn Header="DP" Width="0.8*"/>
+                        <DataGridTextColumn Header="EP" Width="0.8*"/>
+                        <DataGridTextColumn Header="Graphic" Width="80"/>
+                        <DataGridTextColumn Header="Label" Width="80"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+        <Border Grid.Row="5" Grid.ColumnSpan="2" Style="{StaticResource BorderMainSepartor}"/>
+        <Border Grid.Row="6" Grid.ColumnSpan="2" Background="#DFE0DF" Margin="6,1,1,1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="2" Content="CI Code Generated" Style="{StaticResource LabelMid}"/>
+                <Button Content="Create CI" Grid.Column="1" Style="{StaticResource ButtonOrangeBorder}"/>
+                <TextBox Grid.Column="3" Style="{StaticResource TextboxBig}"/>
+            </Grid>
+        </Border>
+        <Border Grid.Row="5" Grid.ColumnSpan="3" Style="{StaticResource BorderMainSepartor}"/>
+    </Grid>
+</Page>

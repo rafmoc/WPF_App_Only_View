@@ -1,0 +1,257 @@
+﻿<Window x:Class="Aplikcja.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="TCassistant" Height="850" Width="1250" Background="#2F4858">
+    <Window.Resources>
+        <ResourceDictionary Source="Dictionary1.xaml"/>
+    </Window.Resources>
+    
+    
+
+    <Grid Background="#54433A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Margin="7,2,7,2" Background="#F57F33">
+            <MenuItem Header="_File">
+                <MenuItem Header="New" Style="{StaticResource MenuItemMainWindow}" InputGestureText="Ctrl+N">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/file.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Import" Style="{StaticResource MenuItemMainWindow}" InputGestureText="Ctrl+O">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/import.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Export" Style="{StaticResource MenuItemMainWindow}" InputGestureText="Ctrl+S">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/export.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Card Stock">
+                <MenuItem Header="New" Style="{StaticResource MenuItemMainWindow}" Click="CardStockCardNew">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/file.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Import" Style="{StaticResource MenuItemMainWindow}" Click="CardStockCardImport">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/import.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Export" Style="{StaticResource MenuItemMainWindow}" Click="CardStockCardExport">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/export.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Show tests" Style="{StaticResource MenuItemMainWindow}" Click="CardStockCardTests" InputGestureText="Alt+T">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/list.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Show orders" Style="{StaticResource MenuItemMainWindow}" Click="CardStockCardOrders" InputGestureText="Alt+O">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/stack.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Show list" Style="{StaticResource MenuItemMainWindow}" Click="CardStockCardList" InputGestureText="Alt+L">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/list.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_DP">
+                <MenuItem Header="New" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/file.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Import" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/import.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Export" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/export.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="DPs" Style="{StaticResource MenuItemMainWindow}" InputGestureText="Ctrl+D">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/automated-process.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_EP">
+                <MenuItem Header="New" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/file.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Import" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/import.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Export" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/export.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="EPs" Style="{StaticResource MenuItemMainWindow}" InputGestureText="Ctrl+E">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/circuit.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Configurations">
+                <MenuItem Header="New" Style="{StaticResource MenuItemMainWindow}" Click="CiNew">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/file.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Import" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/import.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Export" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/export.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="DP and EP matching" Style="{StaticResource MenuItemMainWindow}" Click="DpEpMatching">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/data.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="CI list" Style="{StaticResource MenuItemMainWindow}" Click="CiList" InputGestureText="Ctrl+C">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/list.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_PA">
+                <MenuItem Header="New" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/file.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Import" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/import.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Export" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/export.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="PA and CI matching" Style="{StaticResource MenuItemMainWindow}" Click="PaCiMatching">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/data.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="PA list" Style="{StaticResource MenuItemMainWindow}" Click="PaList" InputGestureText="Ctrl+P">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/list.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_General">
+                <MenuItem Header="New row" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/file.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Import row" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/import.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Export row" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/export.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Print general report" Style="{StaticResource MenuItemMainWindow}" InputGestureText="Ctrl+Alt+P">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/printing.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="General all in one list" Style="{StaticResource MenuItemMainWindow}" InputGestureText="Ctrl+A">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/list.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Settings">
+            </MenuItem>
+            <MenuItem Header="_Admin">
+                <MenuItem Header="Admin Panel" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/user.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Admin settings" Style="{StaticResource MenuItemMainWindow}">
+                    <MenuItem.Icon>
+                        <Image Source="/PNGs/settings.png" Stretch="Fill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <ToolBar Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Margin="4,2,4,2" Background="#DFE0DF">
+            <Button Style="{StaticResource ButtonMainWindowOrangeBorder}" Click="HomePage">
+                <Image Source="/PNGs/MainPage.png" Stretch="Fill" />
+            </Button>
+            <Button Style="{StaticResource ButtonMainWindowOrangeBorder}" Click="CardStockCardList">
+                <Image Source="/PNGs/sim.png" Stretch="Fill" />
+            </Button>
+            <Button Style="{StaticResource ButtonMainWindowOrangeBorder}">
+                <Image Source="/PNGs/sim-card.png" Stretch="Fill" />
+            </Button>
+            <Button Style="{StaticResource ButtonMainWindowOrangeBorder}">
+                <Image Source="/PNGs/sim-cards.png" Stretch="Fill" />
+            </Button>
+            <Button Style="{StaticResource ButtonMainWindowOrangeBorder}">
+                <Image Source="/PNGs/lock.png" Stretch="Fill" />
+            </Button>
+            <Button Style="{StaticResource ButtonMainWindowOrangeBorder}">
+                <Image Source="/PNGs/printing.png" Stretch="Fill" />
+            </Button>
+            <Button Style="{StaticResource ButtonMainWindowOrangeBorder}">
+                <Image Source="/PNGs/message.png" Stretch="Fill" />
+            </Button>
+            <Button Style="{StaticResource ButtonMainWindowOrangeBorder}">
+                <Image Source="/PNGs/chat.png" Stretch="Fill" />
+            </Button>
+        </ToolBar>
+        <Border Grid.Row="2" Style="{StaticResource BorderMainSepartor}"/>
+
+        <Frame x:Name="Main" x:FieldModifier="public" Grid.Row="3" Style="{StaticResource FrameMain}" NavigationUIVisibility="Hidden"/>
+
+        <StatusBar Grid.Row="4" Grid.ColumnSpan="3" Margin="6,2,6,2" Background="#F57F33">
+            <StatusBarItem>
+                <TextBlock>v0.02b</TextBlock>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock>Conection - Data Base</TextBlock>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock>Development status - Mostly Done</TextBlock>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock>Developer - Rafał Olejniczak</TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
